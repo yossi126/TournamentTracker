@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.createPrizeLable = new System.Windows.Forms.Label();
-            this.firstNameValue = new System.Windows.Forms.TextBox();
+            this.placeNumberValue = new System.Windows.Forms.TextBox();
             this.placeNumberLable = new System.Windows.Forms.Label();
-            this.palceNameValue = new System.Windows.Forms.TextBox();
+            this.placeNameValue = new System.Windows.Forms.TextBox();
             this.palceNameLable = new System.Windows.Forms.Label();
             this.prizeAmountValue = new System.Windows.Forms.TextBox();
             this.prizeAmountLable = new System.Windows.Forms.Label();
@@ -52,12 +52,12 @@
             this.createPrizeLable.TabIndex = 12;
             this.createPrizeLable.Text = "Create Prize";
             // 
-            // firstNameValue
+            // placeNumberValue
             // 
-            this.firstNameValue.Location = new System.Drawing.Point(248, 109);
-            this.firstNameValue.Name = "firstNameValue";
-            this.firstNameValue.Size = new System.Drawing.Size(201, 35);
-            this.firstNameValue.TabIndex = 14;
+            this.placeNumberValue.Location = new System.Drawing.Point(248, 109);
+            this.placeNumberValue.Name = "placeNumberValue";
+            this.placeNumberValue.Size = new System.Drawing.Size(201, 35);
+            this.placeNumberValue.TabIndex = 14;
             // 
             // placeNumberLable
             // 
@@ -70,12 +70,12 @@
             this.placeNumberLable.TabIndex = 13;
             this.placeNumberLable.Text = "Place Number";
             // 
-            // palceNameValue
+            // placeNameValue
             // 
-            this.palceNameValue.Location = new System.Drawing.Point(248, 151);
-            this.palceNameValue.Name = "palceNameValue";
-            this.palceNameValue.Size = new System.Drawing.Size(201, 35);
-            this.palceNameValue.TabIndex = 16;
+            this.placeNameValue.Location = new System.Drawing.Point(248, 151);
+            this.placeNameValue.Name = "placeNameValue";
+            this.placeNameValue.Size = new System.Drawing.Size(201, 35);
+            this.placeNameValue.TabIndex = 16;
             // 
             // palceNameLable
             // 
@@ -94,6 +94,7 @@
             this.prizeAmountValue.Name = "prizeAmountValue";
             this.prizeAmountValue.Size = new System.Drawing.Size(201, 35);
             this.prizeAmountValue.TabIndex = 18;
+            this.prizeAmountValue.Text = "0";
             // 
             // prizeAmountLable
             // 
@@ -112,6 +113,7 @@
             this.prizePercentageValue.Name = "prizePercentageValue";
             this.prizePercentageValue.Size = new System.Drawing.Size(201, 35);
             this.prizePercentageValue.TabIndex = 20;
+            this.prizePercentageValue.Text = "0";
             // 
             // prizePercentageLable
             // 
@@ -149,6 +151,7 @@
             this.createPrizeButton.TabIndex = 26;
             this.createPrizeButton.Text = "Create Prize";
             this.createPrizeButton.UseVisualStyleBackColor = true;
+            this.createPrizeButton.Click += new System.EventHandler(this.createPrizeButton_Click);
             // 
             // CreatePrizeFrom
             // 
@@ -162,9 +165,9 @@
             this.Controls.Add(this.prizePercentageLable);
             this.Controls.Add(this.prizeAmountValue);
             this.Controls.Add(this.prizeAmountLable);
-            this.Controls.Add(this.palceNameValue);
+            this.Controls.Add(this.placeNameValue);
             this.Controls.Add(this.palceNameLable);
-            this.Controls.Add(this.firstNameValue);
+            this.Controls.Add(this.placeNumberValue);
             this.Controls.Add(this.placeNumberLable);
             this.Controls.Add(this.createPrizeLable);
             this.Font = new System.Drawing.Font("Segoe UI", 15.75F);
@@ -180,9 +183,9 @@
         #endregion
 
         private System.Windows.Forms.Label createPrizeLable;
-        private System.Windows.Forms.TextBox firstNameValue;
+        private System.Windows.Forms.TextBox placeNumberValue;
         private System.Windows.Forms.Label placeNumberLable;
-        private System.Windows.Forms.TextBox palceNameValue;
+        private System.Windows.Forms.TextBox placeNameValue;
         private System.Windows.Forms.Label palceNameLable;
         private System.Windows.Forms.TextBox prizeAmountValue;
         private System.Windows.Forms.Label prizeAmountLable;
